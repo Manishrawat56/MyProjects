@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="total_expenses_text_color">#663300</color>
+     <color name="list_background_color">#FFFFCC</color>
+     <color name="list_text_color">#000000</color>
+     <color name="actionbar_color">#006666</color>
+</resources>

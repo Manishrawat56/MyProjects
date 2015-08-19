@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/parent_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+        
+        <TableRow            
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            >
+            <TextView android:id="@+id/account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Account"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+            <Button android:id="@+id/account_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:text="Personal"/>
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Item"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/item_value"
+                style="@style/edit_text_style"
+                android:layout_weight=".5"
+                android:ems="10"
+                android:inputType="text" >
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Category"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/category_value"
+                style="@style/edit_text_style"
+                android:layout_weight=".5"
+                android:ems="10"
+                android:inputType="text" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Quantity"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/quantity_value"
+                style="@style/edit_text_style"
+                android:layout_weight=".5"
+                android:ems="10"
+                android:inputType="number" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/price_per_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Price Per Item"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/price_per_item_value"
+                style="@style/edit_text_style"
+                android:layout_weight=".5"
+                android:ems="10"
+                android:inputType="number" />
+        </TableRow>
+
+         
+
+        
+
+         <TableRow android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:weightSum="1">
+             <TextView android:id="@+id/date"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Date"
+                 android:layout_weight=".5"
+                 android:textAppearance="?android:attr/textAppearanceLarge"/>
+             <Button android:id="@+id/date_value"
+                 android:layout_width="wrap_content"
+                 android:gravity="center"
+                 android:layout_weight=".5"
+                 android:layout_height="wrap_content"
+                 android:text="button"/>
+             
+         </TableRow >
+         <TableRow android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:weightSum="1">
+             <TextView android:id="@+id/time"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Time"
+                 android:layout_weight=".5"
+                 android:textAppearance="?android:attr/textAppearanceLarge"/>
+             <Button android:id="@+id/time_value"
+                 android:layout_width="wrap_content"
+                 android:gravity="center"
+                 android:layout_weight=".5"
+                 android:layout_height="wrap_content"
+                 android:text="Time"/>
+             
+         </TableRow >
+        
+    </TableLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="0dp"
+     android:layout_below="@id/parent_table"
+    android:gravity="center_horizontal">
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:text="Save" />
+    <Button
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="75dp"
+        android:layout_toRightOf="@+id/save"
+        android:text="Skip" />
+</LinearLayout>
+
+</RelativeLayout>

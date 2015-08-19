@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+     >
+    <TableLayout 
+	    android:id="@+id/expenses_list"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="4dp"
+	    >
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+	  <TextView android:id="@+id/item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_weight=".33"
+        android:gravity="center"
+         android:textColor="@color/list_text_color"
+        android:textStyle="bold"
+        />
+	 <TextView android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight=".34"
+         android:textStyle="bold"
+          android:textColor="@color/list_text_color"
+        />
+	  <TextView android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight=".33"
+         android:textColor="@color/list_text_color"
+         android:textStyle="bold"
+        /></TableRow>
+   
+        </TableLayout>
+
+</RelativeLayout>

@@ -10,12 +10,12 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 
-import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -47,7 +47,7 @@ public class MainActivity extends ActionBarActivity {
 	        }
 	 
 	        // call AsynTask to perform network operation on separate thread
-	        new HttpAsyncTask().execute("http://192.168.2.155/data/get.json");
+	        new HttpAsyncTask().execute("http://192.168.0.101/data/get.json");
 	    }
 	 
 	    public static String GET(String url){
